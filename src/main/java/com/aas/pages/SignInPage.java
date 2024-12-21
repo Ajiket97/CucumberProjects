@@ -27,9 +27,9 @@ public class SignInPage {
 		element.click();
 	}
 
-	public void enterEmail(String email) {
+	public void enterEmail(String object) {
 		WebElement element = waitUtility.waitForElementToBeVisible(emailTxt);
-		element.sendKeys(email);
+		element.sendKeys(object);
 
 	}
 
@@ -39,9 +39,9 @@ public class SignInPage {
 
 	}
 
-	public void enterPwd(String pwd) {
+	public void enterPwd(String object) {
 		WebElement element = waitUtility.waitForElementToBeVisible(pwdTxt);
-		element.sendKeys(pwd);
+		element.sendKeys(object);
 
 	}
 
@@ -60,4 +60,6 @@ public class SignInPage {
 	public String getLandinPageTitle() {
 		return driver.getTitle();
 	}
+
+	
 }
